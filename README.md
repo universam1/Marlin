@@ -2,6 +2,9 @@
 <img align="top" width=175 src="Documentation/Logo/Marlin%20Logo%20GitHub.png" />
  Additional documentation can be found in [The Marlin Wiki](https://github.com/MarlinFirmware/Marlin/wiki).
 
+# Tweaked to reflect customizations for MDF Frame Reprap PrusaM i3
+### by Sam Lang
+
 ## Release Candidate -- Marlin 1.1.0-RC6 - 24 April 2016
 
 __Not for production use – use with caution!__
