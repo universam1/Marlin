@@ -461,14 +461,14 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
+#define INVERT_X_DIR true
 #define INVERT_Y_DIR true
 #define INVERT_Z_DIR false
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -490,12 +490,12 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS -15
-#define Y_MIN_POS -30
+#define X_MIN_POS -23
+#define Y_MIN_POS -23
 #define Z_MIN_POS 0
 #define X_MAX_POS 200
-#define Y_MAX_POS 200
-#define Z_MAX_POS 200
+#define Y_MAX_POS 197
+#define Z_MAX_POS 197
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
@@ -679,12 +679,12 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
  * MOVEMENT SETTINGS
  */
 
-#define HOMING_FEEDRATE {50*60, 50*60, 4*60, 0}  // set the homing speeds (mm/min)
+#define HOMING_FEEDRATE {50*60, 50*60, 20*60, 0}  // set the homing speeds (mm/min)
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 400, 145.55}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {100, 100, 50, 25}    // (mm/sec)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 400, 100}  // default steps per unit for Ultimaker
+#define DEFAULT_MAX_FEEDRATE          {100, 100, 20, 50}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration in mm/s^2 for printing moves
