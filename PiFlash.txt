@@ -1,3 +1,0 @@
-https://github.com/foosel/OctoPrint/wiki/Assorted-OctoPrint-Quick-Tips#flashing-a-new-arduino-firmware-directly-from-your-octoprint-host
-
-/usr/bin/avrdude -C/etc/avrdude.conf -v -v -v -patmega2560 -cwiring -P/dev/ttyUSB0 -b115200 -D -Uflash:w:./Marlin.cpp.hex:i
