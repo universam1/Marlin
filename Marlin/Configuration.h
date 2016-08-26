@@ -126,7 +126,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "PruSAM #1"
+#define CUSTOM_MACHINE_NAME "PruSAM i3"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -472,9 +472,9 @@
 // X and Y offsets must be integers.
 //
 // In the following example the X and Y offsets are both positive:
-#define X_PROBE_OFFSET_FROM_EXTRUDER 10
-#define Y_PROBE_OFFSET_FROM_EXTRUDER 10
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER 24
+#define Y_PROBE_OFFSET_FROM_EXTRUDER 9
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -10   // Z offset: -below +above  [the nozzle]
 
 //
 //    +-- BACK ---+
@@ -489,7 +489,7 @@
 //  (0,0)
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 4000
+#define XY_PROBE_SPEED 6000
 // Speed for the first approach when double-probing (with PROBE_DOUBLE_TOUCH)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
 // Speed for the "accurate" probe of each point
@@ -549,8 +549,8 @@
 // Minimum heights for the probe to deploy/stow and travel.
 // These values specify the distance from the NOZZLE to the BED.
 //
-#define Z_PROBE_DEPLOY_HEIGHT 15 // Z position for the probe to deploy/stow
-#define Z_PROBE_TRAVEL_HEIGHT  5 // Z position for travel between points
+#define Z_PROBE_DEPLOY_HEIGHT 20 // Z position for the probe to deploy/stow
+#define Z_PROBE_TRAVEL_HEIGHT  10 // Z position for travel between points
 
 //
 // For M851 give a range for adjusting the Z probe offset
@@ -615,7 +615,7 @@
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS 200
-#define Y_MAX_POS 199
+#define Y_MAX_POS 220
 #define Z_MAX_POS 187
 
 //===========================================================================

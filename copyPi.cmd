@@ -1,0 +1,1 @@
+scp /c/Users/SLang/AppData/Local/Temp/build74fe08c0872deda2d2f46bda98f9cf8f.tmp/Marlin.ino.hex sam@octo.lang-sam.de:/tmp
