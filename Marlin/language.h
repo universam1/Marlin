@@ -25,6 +25,9 @@
 
 #include "MarlinConfig.h"
 
+// Define SIMULATE_ROMFONT to see what is seen on the character based display defined in Configuration.h
+//#define SIMULATE_ROMFONT
+
 // Fallback if no language is set. DON'T CHANGE
 #ifndef LCD_LANGUAGE
   #define LCD_LANGUAGE en
@@ -154,6 +157,9 @@
 #define MSG_ENDSTOP_OPEN                    "open"
 #define MSG_HOTEND_OFFSET                   "Hotend offsets:"
 #define MSG_DUPLICATION_MODE                "Duplication mode: "
+#define MSG_SOFT_ENDSTOPS                   "Soft endstops"
+#define MSG_SOFT_MIN                        "Min"
+#define MSG_SOFT_MAX                        "Max"
 
 #define MSG_SD_CANT_OPEN_SUBDIR             "Cannot open subdir "
 #define MSG_SD_INIT_FAIL                    "SD init fail"
@@ -239,6 +245,11 @@
 #define INCLUDE_LANGUAGE LANGUAGE_INCL(LCD_LANGUAGE)
 
 #include INCLUDE_LANGUAGE
+
+#if DISABLED(SIMULATE_ROMFONT) && DISABLED(DISPLAY_CHARSET_ISO10646_1) && DISABLED(DISPLAY_CHARSET_ISO10646_5) && DISABLED(DISPLAY_CHARSET_ISO10646_KANA) && DISABLED(DISPLAY_CHARSET_ISO10646_GREEK) && DISABLED(DISPLAY_CHARSET_ISO10646_CN)
+  #define DISPLAY_CHARSET_ISO10646_1 // use the better font on full graphic displays.
+#endif
+
 #include "language_en.h"
 
 #endif //__LANGUAGE_H
