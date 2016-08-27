@@ -549,8 +549,8 @@
 // Minimum heights for the probe to deploy/stow and travel.
 // These values specify the distance from the NOZZLE to the BED.
 //
-#define Z_PROBE_DEPLOY_HEIGHT 20 // Z position for the probe to deploy/stow
-#define Z_PROBE_TRAVEL_HEIGHT  10 // Z position for travel between points
+#define Z_PROBE_DEPLOY_HEIGHT (-(Z_PROBE_OFFSET_FROM_EXTRUDER) + 10) // Z position for the probe to deploy/stow
+#define Z_PROBE_TRAVEL_HEIGHT (-(Z_PROBE_OFFSET_FROM_EXTRUDER) + 5) // Z position for travel between points
 
 //
 // For M851 give a range for adjusting the Z probe offset
