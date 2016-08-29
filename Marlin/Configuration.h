@@ -474,7 +474,7 @@
 // In the following example the X and Y offsets are both positive:
 #define X_PROBE_OFFSET_FROM_EXTRUDER 24
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 9
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -10   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -6.16   // Z offset: -below +above  [the nozzle]
 
 //
 //    +-- BACK ---+
@@ -549,8 +549,8 @@
 // Minimum heights for the probe to deploy/stow and travel.
 // These values specify the distance from the NOZZLE to the BED.
 //
-#define Z_PROBE_DEPLOY_HEIGHT (-(Z_PROBE_OFFSET_FROM_EXTRUDER) + 10) // Z position for the probe to deploy/stow
-#define Z_PROBE_TRAVEL_HEIGHT (-(Z_PROBE_OFFSET_FROM_EXTRUDER) + 5) // Z position for travel between points
+#define Z_PROBE_DEPLOY_HEIGHT (-(-6) + 10) // Z position for the probe to deploy/stow
+#define Z_PROBE_TRAVEL_HEIGHT (-(-6) + 5) // Z position for travel between points
 
 //
 // For M851 give a range for adjusting the Z probe offset
@@ -660,7 +660,7 @@
 // @section bedlevel
 
 #define AUTO_BED_LEVELING_FEATURE // Delete the comment to enable (remove // at the start of the line)
-//#define DEBUG_LEVELING_FEATURE
+#define DEBUG_LEVELING_FEATURE
 #define Z_MIN_PROBE_REPEATABILITY_TEST  // If not commented out, Z Probe Repeatability test will be included if Auto Bed Leveling is Enabled.
 
 #if ENABLED(AUTO_BED_LEVELING_FEATURE)
