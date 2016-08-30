@@ -1585,7 +1585,7 @@ static void set_axis_is_at_home(AxisEnum axis) {
     update_software_endstops(axis);
 
     if (axis == Z_AXIS) {
-      #if HAS_BED_PROBE && Z_HOME_DIR < 0
+      #if HAS_BED_PROBE // && Z_HOME_DIR < 0 This condition breaks z-probe offset for printers homing to max Z
         #if DISABLED(Z_MIN_PROBE_ENDSTOP)
           current_position[Z_AXIS] -= zprobe_zoffset;
           #if ENABLED(DEBUG_LEVELING_FEATURE)
