@@ -136,3 +136,6 @@ CMakeListsPrivate.txt
 
 #CLion
 cmake-build-*
+.pioenvs
+.piolibdeps
+.vscode
