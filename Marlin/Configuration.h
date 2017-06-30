@@ -739,11 +739,11 @@
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS 27
+#define X_MIN_POS -27
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS 200
-#define Y_MAX_POS 220
+#define Y_MAX_POS 208
 #define Z_MAX_POS 187
 
 // If enabled, axes won't move below MIN_POS in response to movement commands.
@@ -836,7 +836,7 @@
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
-  #define LEFT_PROBE_BED_POSITION 60
+  #define LEFT_PROBE_BED_POSITION 30
   #define RIGHT_PROBE_BED_POSITION 185
   #define FRONT_PROBE_BED_POSITION 30
   #define BACK_PROBE_BED_POSITION 185
