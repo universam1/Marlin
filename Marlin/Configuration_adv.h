@@ -679,7 +679,7 @@
 #define LIN_ADVANCE
 
 #if ENABLED(LIN_ADVANCE)
-  #define LIN_ADVANCE_K 75
+  #define LIN_ADVANCE_K 150
 
   /**
    * Some Slicers produce Gcode with randomly jumping extrusion widths occasionally.
@@ -753,7 +753,7 @@
 
 // The minimum pulse width (in µs) for stepping a stepper.
 // Set this if you find stepping unreliable, or if using a very fast CPU.
-#define MINIMUM_STEPPER_PULSE 0 // (µs) The smallest stepper pulse allowed
+#define MINIMUM_STEPPER_PULSE 2 // (µs) The smallest stepper pulse allowed
 
 // @section temperature
 
