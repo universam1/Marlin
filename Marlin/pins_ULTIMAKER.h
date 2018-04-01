@@ -40,8 +40,6 @@
 #define DEFAULT_SOURCE_CODE_URL "https://github.com/Ultimaker/Marlin"
 #define BOARD_NAME              "Ultimaker"
 
-#define LARGE_FLASH true
-
 //
 // Servos
 //
@@ -109,7 +107,7 @@
 #define SDSS               53
 #define LED_PIN            13
 #define PS_ON_PIN          12
-#define SUICIDE_PIN        54  // PIN that has to be turned on right after start, to keep power flowing.
+#define SUICIDE_PIN        54   // PIN that has to be turned on right after start, to keep power flowing.
 #define CASE_LIGHT_PIN      8
 
 //
@@ -121,12 +119,12 @@
 
   #if ENABLED(NEWPANEL)
 
-    #define LCD_PINS_RS 20
+    #define LCD_PINS_RS    20
     #define LCD_PINS_ENABLE 17
-    #define LCD_PINS_D4 16
-    #define LCD_PINS_D5 21
-    #define LCD_PINS_D6 5
-    #define LCD_PINS_D7 6
+    #define LCD_PINS_D4    16
+    #define LCD_PINS_D5    21
+    #define LCD_PINS_D6     5
+    #define LCD_PINS_D7     6
 
     // buttons are directly attached
     #define BTN_EN1 40

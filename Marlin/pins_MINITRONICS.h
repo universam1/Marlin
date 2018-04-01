@@ -40,8 +40,6 @@
 #endif
 
 #define BOARD_NAME         "Minitronics v1.0 / v1.1"
-#define LARGE_FLASH        true
-
 //
 // Limit Switches
 //
@@ -104,9 +102,9 @@
 
 #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
 
-  #define LCD_PINS_RS      15 // CS chip select /SS chip slave select
-  #define LCD_PINS_ENABLE  11 // SID (MOSI)
-  #define LCD_PINS_D4      10 // SCK (CLK) clock
+  #define LCD_PINS_RS      15   // CS chip select /SS chip slave select
+  #define LCD_PINS_ENABLE  11   // SID (MOSI)
+  #define LCD_PINS_D4      10   // SCK (CLK) clock
 
   #define BTN_EN1          18
   #define BTN_EN2          17
@@ -118,10 +116,6 @@
 
   #define LCD_PINS_RS      -1
   #define LCD_PINS_ENABLE  -1
-  #define LCD_PINS_D4      -1
-  #define LCD_PINS_D5      -1
-  #define LCD_PINS_D6      -1
-  #define LCD_PINS_D7      -1
 
   // Buttons are directly attached using keypad
   #define BTN_EN1          -1

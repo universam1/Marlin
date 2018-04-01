@@ -21,22 +21,18 @@
  */
 
 /**
- * MegaTronics v3.0 pin assignments
+ * MegaTronics v3.0 / v3.1 pin assignments
  */
 
 #ifndef __AVR_ATmega2560__
   #error "Oops!  Make sure you have 'Arduino Mega' selected from the 'Tools -> Boards' menu."
 #endif
 
-#define MEGATRONICS_31
-
-#if ENABLED(MEGATRONICS_31)
-  #define BOARD_NAME       "Megatronics v3.1"
+#if MB(MEGATRONICS_31)
+  #define BOARD_NAME "Megatronics v3.1"
 #else
-  #define BOARD_NAME       "Megatronics v3.0"
+  #define BOARD_NAME "Megatronics v3.0"
 #endif
-
-#define LARGE_FLASH        true
 
 //
 // Servos
@@ -131,7 +127,7 @@
 #define SDSS               53
 #define LED_PIN            13
 #define PS_ON_PIN          12
-#define CASE_LIGHT_PIN     45 // try the keypad connector
+#define CASE_LIGHT_PIN     45   // Try the keypad connector
 
 //
 // LCD / Controller
@@ -144,9 +140,9 @@
 
 #if ENABLED(REPRAPWORLD_GRAPHICAL_LCD)
 
-  #define LCD_PINS_RS      56 // CS chip select / SS chip slave select
-  #define LCD_PINS_ENABLE  51 // SID (MOSI)
-  #define LCD_PINS_D4      52 // SCK (CLK) clock
+  #define LCD_PINS_RS      56   // CS chip select / SS chip slave select
+  #define LCD_PINS_ENABLE  51   // SID (MOSI)
+  #define LCD_PINS_D4      52   // SCK (CLK) clock
   #define SD_DETECT_PIN    35
 
 #else
@@ -163,10 +159,8 @@
   #define SHIFT_OUT        34
   #define SHIFT_EN         44
 
-  #if ENABLED(MEGATRONICS_31)
+  #if MB(MEGATRONICS_31)
     #define SD_DETECT_PIN  56
-  #else
-    #define SD_DETECT_PIN  -1
   #endif
 
 #endif
