@@ -679,7 +679,7 @@
 #define LIN_ADVANCE
 
 #if ENABLED(LIN_ADVANCE)
-  #define LIN_ADVANCE_K 150
+  #define LIN_ADVANCE_K 0
 
   /**
    * Some Slicers produce Gcode with randomly jumping extrusion widths occasionally.
@@ -705,7 +705,7 @@
    * Slic3r (including Průša Control) produces Gcode compatible with the automatic mode.
    * Cura (as of this writing) may produce Gcode incompatible with the automatic mode.
    */
-  #define LIN_ADVANCE_E_D_RATIO 0 // The calculated ratio (or 0) according to the formula W * H / ((D / 2) ^ 2 * PI)
+  #define LIN_ADVANCE_E_D_RATIO 0.033260135 // The calculated ratio (or 0) according to the formula W * H / ((D / 2) ^ 2 * PI)
                                   // Example: 0.4 * 0.2 / ((1.75 / 2) ^ 2 * PI) = 0.033260135
 #endif
 
